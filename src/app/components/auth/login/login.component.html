@@ -1,0 +1,26 @@
+<section class="container-login">
+  <div class="login-card">
+    <h2 class="title">Ingrese sus datos para iniciar sesion</h2>
+    <form [formGroup]="FormLogin">
+      <div>
+        <mat-form-field class="field">
+          <mat-label>Usuario o email</mat-label>
+          <input formControlName="user" matInput />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="field">
+          <mat-label>Contrasena</mat-label>
+          <input formControlName="password" matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="link-container">
+        <a class="link">Olvide mi contrasena</a>
+      </div>
+    </form>
+    <button class="button-login">Login</button>
+    <button routerLink="/register" class="button-register">Registrarme</button>
+  </div>
+</section>

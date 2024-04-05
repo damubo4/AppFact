@@ -1,0 +1,52 @@
+.container-login {
+  background-color: #2e3e4e;
+  height: 100vh;
+  display: flex;
+}
+
+.login-card {
+  margin: auto;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.field {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.link {
+  color: #0cc2aa;
+  text-decoration: underline;
+  font-size: small;
+  cursor: pointer;
+} 
+
+.link-container {
+  margin-bottom: 20px;
+  text-align: end;
+  margin-top: -20px;
+}
+
+button {
+  background-color: #0cc2aa;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  width: 100%;
+  outline: 0;
+  border: none;
+  padding: 5px 8px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+

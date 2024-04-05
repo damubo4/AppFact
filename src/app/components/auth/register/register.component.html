@@ -1,0 +1,39 @@
+<section class="container-login">
+  <div class="login-card">
+    <h2 class="title">Ingrese sus datos para completar su registro</h2>
+    <form [formGroup]="FormRegister">
+      <div>
+        <mat-form-field class="field">
+          <mat-label>Nombre</mat-label>
+          <input formControlName="name" matInput />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="field">
+          <mat-label>Email</mat-label>
+          <input formControlName="email" matInput />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="field">
+          <mat-label>Empresa</mat-label>
+          <input formControlName="enterprise" matInput />
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field class="field">
+          <mat-label>Telefono</mat-label>
+          <input formControlName="phone" matInput />
+        </mat-form-field>
+      </div>      
+
+      <div class="link-container">
+        <a class="link">Iniciar sesion</a>
+      </div>
+    </form>
+    <button routerLink="/login" class="button-register">Registrarme</button>
+  </div>
+</section>
