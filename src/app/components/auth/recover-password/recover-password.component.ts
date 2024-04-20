@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
-  FormsModule,
-  ReactiveFormsModule,
   Validators,
+  ReactiveFormsModule,
+  FormsModule,
 } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
@@ -14,7 +14,7 @@ import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-login',
+  selector: 'app-recover-password',
   standalone: true,
   imports: [
     FormsModule,
@@ -24,18 +24,17 @@ import { MatIconModule } from '@angular/material/icon';
     MatSelectModule,
     MatButtonModule,
     RouterLink,
-    MatIconModule
+    MatIconModule,
   ],
-  templateUrl: './login.component.html',
-  styleUrl: './login.component.scss',
+  templateUrl: './recover-password.component.html',
+  styleUrl: './recover-password.component.scss',
 })
-export class LoginComponent {
-  FormLogin: FormGroup;
+export class RecoverPasswordComponent {
+  FormRecover: FormGroup;
   hide = true;
   constructor(private formBuilder: FormBuilder) {
-    this.FormLogin = this.formBuilder.group({
-      user: ['', [Validators.required]],
-      password: ['', [Validators.required]],
+    this.FormRecover = this.formBuilder.group({
+      email: ['', [Validators.required]],
     });
   }
 }

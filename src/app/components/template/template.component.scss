@@ -1,0 +1,12 @@
+.template {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    height: 100vh;
+    background-color: #2e3e4e;
+    overflow-y: hidden;
+}
+
+.template-right {
+    display: grid;
+    grid-template-rows: 1fr 11fr;
+}

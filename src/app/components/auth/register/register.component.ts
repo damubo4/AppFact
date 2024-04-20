@@ -11,6 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterLink } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
   selector: 'app-register',
@@ -22,7 +24,9 @@ import { RouterLink } from '@angular/router';
     MatInputModule,
     MatSelectModule,
     MatButtonModule,
-    RouterLink
+    RouterLink,
+    MatIconModule,
+    MatDividerModule,
   ],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss',
@@ -32,11 +36,8 @@ export class RegisterComponent {
 
   constructor(private formBuilder: FormBuilder) {
     this.FormRegister = this.formBuilder.group({
-      name: ['', [Validators.required]],
-      email: ['', [Validators.required]],
-      enterprise: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
       phone: ['', [Validators.required]],
     });
   }
-
 }
